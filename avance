@@ -1,0 +1,64 @@
+#pragma once
+#include<iostream>
+#include<sstream>
+
+using namespace std;
+
+class entidadDoctor
+{
+private:
+	string nombre;
+	string especialidad;
+
+public:
+
+	void setNombre(string pNombre)
+	{
+		nombre = pNombre;
+	}
+	void setEspecialidad(string pEspecialidad) 
+	{
+		especialidad = pEspecialidad;
+	}
+
+	string getNombre()
+	{
+		return nombre;
+	}
+	string getEspecialidad()
+	{
+		return especialidad;
+	}
+
+	entidadDoctor()
+	{
+		nombre = " ";
+		especialidad = " ";
+	}
+
+	~entidadDoctor()
+	{
+
+	}
+};
+
+class docContenedor
+{
+private:
+
+	entidadDoctor doctores[20];
+
+public:
+
+
+	docContenedor()
+	{
+
+	}
+
+	~docContenedor()
+	{
+
+	}
+};
+
